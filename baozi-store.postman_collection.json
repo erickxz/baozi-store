@@ -1,0 +1,457 @@
+{
+  "info": {
+    "name": "Baozi Store API",
+    "description": "Requisições da API REST Baozi Store (Uninter - Desenvolvimento Web Back-End).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Criar Cliente",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/clientes",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "clientes"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"ErickRU_AQUI\",\n  \"clienteDesde\": \"2026-10-11\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Criar Produto",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/produtos",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "produtos"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Baozi Tradicional de Porco\",\n  \"preco\": 8.50,\n  \"estoque\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Criar Pedido",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/pedidos",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "pedidos"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"clienteId\": 1,\n  \"produtoId\": 1,\n  \"quantidade\": 6\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Clientes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/clientes",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "clientes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Produtos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/produtos",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "produtos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Pedidos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/pedidos",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "pedidos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar Cliente por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/clientes/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "clientes",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar Produto por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/produtos/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "produtos",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar Pedido por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/pedidos/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "pedidos",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Atualizar Cliente",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/clientes/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "clientes",
+            "1"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"ErickRU_AQUI\",\n  \"clienteDesde\": \"2026-10-11\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Atualizar Produto",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/produtos/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "produtos",
+            "1"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Baozi Tradicional de Porco\",\n  \"preco\": 9.00,\n  \"estoque\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Atualizar Pedido",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/pedidos/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "pedidos",
+            "1"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"clienteId\": 1,\n  \"produtoId\": 1,\n  \"quantidade\": 10\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Criar Cliente Teste",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/clientes",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "clientes"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Cliente Teste\",\n  \"clienteDesde\": \"2026-10-11\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Criar Produto Teste",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/produtos",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "produtos"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Produto Teste\",\n  \"preco\": 1.00,\n  \"estoque\": false\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Criar Pedido Teste",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/pedidos",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "pedidos"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"clienteId\": 2,\n  \"produtoId\": 2,\n  \"quantidade\": 1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deletar Pedido 2",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/pedidos/2",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "pedidos",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deletar Produto 2",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/produtos/2",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "produtos",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deletar Cliente 2",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/clientes/2",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "clientes",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080",
+      "type": "string"
+    }
+  ]
+}

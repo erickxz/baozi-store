@@ -1,0 +1,27 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Banco H2 local (arquivos gerados em tempo de execucao)
+data/
+*.mv.db
+*.trace.db
+
+# Java
+*.class
+*.log
+hs_err_pid*
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# VS Code
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
